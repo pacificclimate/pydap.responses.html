@@ -6,7 +6,7 @@ here = os.path.abspath(os.path.dirname(__file__))
 #NEWS = open(os.path.join(here, 'NEWS.txt')).read()
 
 
-version = '0.1dev'
+version = '0.2dev'
 
 install_requires = [
     # List your project dependencies here.
@@ -29,12 +29,13 @@ setup(name='pydap.responses.html',
     license='MIT',
     packages=find_packages('src'),
     package_dir = {'': 'src'},
+    package_data={'pydap.responses.html': ['templates/*.html']},
     namespace_packages = ['pydap', 'pydap.responses'],
     include_package_data=True,
     zip_safe=False,
     install_requires=install_requires,
     entry_points="""
-        [pydap.responses]    
+        [pydap.response]    
         html = pydap.responses.html:HTMLResponse
     """,
 )
