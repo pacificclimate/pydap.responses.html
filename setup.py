@@ -11,7 +11,7 @@ version = '0.2'
 install_requires = [
     'jinja2',
     'webob',
-    'pydap >=3.2.1'
+    'pydap_pdp >=3.2.1'
 ]
 
 
@@ -26,7 +26,6 @@ setup(name='pydap.responses.html',
     author='Roberto De Almeida',
     author_email='roberto@dealmeida.net',
 #url='http://pydap.org/handlers.html#csv',
-    dependency_links = ['https://github.com/pacificclimate/pydap-pdp/tarball/master#egg=Pydap-3.2.2'],
     license='MIT',
     packages=find_packages('src'),
     package_dir = {'': 'src'},
